@@ -106,9 +106,7 @@ class KMeansSuite extends SparkFunSuite with MLlibTestSparkContext {
     assert(clusters === Set(0, 1, 2, 3, 4))
   }
 
-
   test("Initialize using given cluster centers") {
-
     val points = Seq(
       Vectors.dense(0.0, 0.0, 0.0),
       Vectors.dense(1.0, 1.0, 1.0),
